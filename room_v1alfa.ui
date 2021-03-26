@@ -213,7 +213,7 @@ QPushButton:hover {
              <bool>true</bool>
             </property>
             <property name="currentIndex">
-             <number>0</number>
+             <number>1</number>
             </property>
             <widget class="QWidget" name="odalarPage">
              <widget class="QLabel" name="label_2">
@@ -249,6 +249,20 @@ QPushButton:hover {
                 <height>441</height>
                </rect>
               </property>
+              <property name="font">
+               <font>
+                <pointsize>19</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="spacing">
+               <number>1</number>
+              </property>
+              <property name="sortingEnabled">
+               <bool>false</bool>
+              </property>
              </widget>
             </widget>
             <widget class="QWidget" name="girisPage">
@@ -274,6 +288,101 @@ QPushButton:hover {
               </property>
               <property name="alignment">
                <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="kullaniciAdiLabel">
+              <property name="geometry">
+               <rect>
+                <x>220</x>
+                <y>120</y>
+                <width>161</width>
+                <height>41</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>15</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="text">
+               <string>Doktor No</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="sifreLabel">
+              <property name="geometry">
+               <rect>
+                <x>470</x>
+                <y>120</y>
+                <width>161</width>
+                <height>41</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>15</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="text">
+               <string>Şifre</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pushButton">
+              <property name="geometry">
+               <rect>
+                <x>360</x>
+                <y>310</y>
+                <width>141</width>
+                <height>51</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>15</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="text">
+               <string>Giriş</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="usrInput">
+              <property name="geometry">
+               <rect>
+                <x>220</x>
+                <y>190</y>
+                <width>161</width>
+                <height>25</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="pswInput">
+              <property name="geometry">
+               <rect>
+                <x>470</x>
+                <y>190</y>
+                <width>161</width>
+                <height>25</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);</string>
               </property>
              </widget>
             </widget>
