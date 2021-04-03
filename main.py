@@ -15,7 +15,7 @@ class MainWindow:
         self.ui.girisButton.clicked.connect(self.showgiris)
         self.ui.infoButton.clicked.connect(self.showinfo)
 
-        #adding İtems to The list 
+        #adding Items to The list 
         for i in range(5):
             self.ui.odalarList.insertItem(i,"Oda {}".format(i+1))
 
@@ -38,9 +38,12 @@ class MainWindow:
 
     #get pushed button data in the function and processes it
     def showRoomInfo(self,sendedItem):
-        print(self.ui.odalarList.currentItem().text()) #shows text when clicked
-        print(self.ui.odalarList.currentRow()) #show index when clicked
-        pass
+        selected_room = self.ui.odalarList.currentItem().text() #shows text when clicked
+        selected_room_index = self.ui.odalarList.currentRow() #show index when clicked
+        if selected_room_index == 2:
+            self.ui.doktorAdi.setText("Doktor: Mustafa Dağkıranlar")
+            self.ui.odaBilgi.setText("Bilgi:")
+            pass
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
